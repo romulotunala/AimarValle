@@ -29,7 +29,7 @@ p, a, button{
 	align-items: center; 
 }
 .header hr{
-	width: 95%;
+	width: 100%;
 	margin: 0 auto;
 	border: .5px solid #f38001;
 	/*background: #f38001;*/
@@ -161,6 +161,7 @@ p, a, button{
 }
 .partners__name{
 	/*margin-bottom: 20px;*/
+	font-weight: 400;
 	color: #f38000;
 	line-height: 1.5em;
 }
@@ -186,6 +187,12 @@ p, a, button{
 	-webkit-box-reflect: below 0.15em linear-gradient(transparent 80%, white);
 }
 @media(max-width: 780px){
+	.container--partners{
+		width: 96%;
+		margin: 0 2%;
+	}
+}
+@media(max-width: 576px){
 	.container--partners hr{
 		margin: 20px 0;
 	}

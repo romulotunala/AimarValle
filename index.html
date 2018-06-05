@@ -8,7 +8,12 @@
 	<link rel="stylesheet" href="style.css">
 	<style>
 		.header{
-			justify-content: flex-end;
+			justify-content: center;
+		}
+		@media(max-width: 780px){
+			.header{
+				justify-content: flex-end;
+			}
 		}
 	</style>
 </head>
@@ -19,7 +24,7 @@
 	<nav class="header__menu">
 		<a class="headerMenu__item" href="index.html">Home</a>
 		<a class="headerMenu__item" href="partners.html">Parceiros</a>
-		<a class="headerMenu__item" href="contact.html">Contato</a>
+		<a class="headerMenu__item" href="#">Contato</a><!-- contact.html -->
 	</nav>
 	<hr>
 </header>
