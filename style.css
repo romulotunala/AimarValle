@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+@import url("fonts/stylesheet.css");
 
 *,*:after,*:before{
 	box-sizing: border-box;
@@ -18,11 +18,12 @@ body{
 h1, h2, h3,
 h4, h5, h6,
 p, a, button{
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Century Gothic';
+    font-weight: normal;
+    font-style: normal;
 }
 .header{
 	width: 100%;
-	/*padding: 0 10%;*/
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -32,12 +33,16 @@ p, a, button{
 	width: 100%;
 	margin: 0 auto;
 	border: .5px solid #f38001;
-	/*background: #f38001;*/
 }
 .header__logo{
 	height: 40px;
 	margin:5px;
-	margin-left:3%; 
+	margin-left:3%;
+	text-decoration: none;
+
+}
+.header__logo img{
+	height: 100%;
 }
 .header__menuMobile{
 	margin-right:3%; 
@@ -51,13 +56,12 @@ p, a, button{
 	width: 250px;
 	max-width: 40%;
 	min-height: 50px;
-	margin-right:3%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 .headerMenu__item{
-	font-weight: 500;
+	text-align: center;
 	text-decoration: none;
 	color:#666;
 }
@@ -71,6 +75,7 @@ p, a, button{
 	}
 	.header__menu{
 		max-width: 80px;
+		margin-right:3%;
 		background: #fffa;
 		position: absolute;
 		top:53px;
@@ -85,8 +90,8 @@ p, a, button{
 	}	
 }
 .headerMenu__item:hover{
-	font-weight: 700;
-	color:#463C3C;	
+	font-weight: bold;
+	color:#797979;	
 }
 .container{
 	width: 100%;
@@ -98,7 +103,6 @@ p, a, button{
 }
 .container__title{
 	margin:20px 0;
-	font-weight: 400;
 	font-size: 36px;
 	color: #a9abad;
 }
@@ -114,10 +118,12 @@ p, a, button{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	align-items: flex-start;
+	align-items: baseline;
 	justify-content: space-between;
 }
 .box__image{
+	width: 300px;
+	/*height: 188px;*/
 	margin-bottom: 10%;
 	-webkit-box-reflect: below 0.25em linear-gradient(transparent 70%, white);
 	/*-moz-box-reflect: below 0.25em linear-gradient(transparent 70%, white);*/
@@ -160,8 +166,7 @@ p, a, button{
 	min-height: 250px;
 }
 .partners__name{
-	/*margin-bottom: 20px;*/
-	font-weight: 400;
+	/*font-weight: 400;*/
 	color: #f38000;
 	line-height: 1.5em;
 }
@@ -177,10 +182,10 @@ p, a, button{
 	/*justify-content: flex-end;*/
 }
 .partnersInfo__item{
-	font-weight: 400;
 	font-size: 12px;
 	color: #f38000;
 	line-height: 1.6em;
+	text-decoration: none;
 }
 .partner_photo{
 	margin-bottom: 40px;
