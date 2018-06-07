@@ -240,8 +240,8 @@ p, a, button{
 	}
 	.contact__section--image{
 		width: 100%;
-		max-height:250px; 
-		background-position: center -250px;
+		max-height:200px; 
+		background-position: center -200px;
 	}
 	.socialBox{
 
