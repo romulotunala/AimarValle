@@ -212,7 +212,6 @@ p, a, button{
 }
 .container--contact{
 	height: 90vh;
-	/*margin: 10%;*/
 	display: flex;
 }
 .contact__section{
@@ -229,19 +228,24 @@ p, a, button{
 	background-size: cover;
 }
 .socialBox{
-	/*width: 200px;*/
+	min-height: 60px;
 	margin:2px;
-	/*border:1px solid #ddd;*/
-	/*border-radius: 10px;
-	box-shadow: 1px 1px 3px #efefef;
-	background: #eeeeee;*/
 	display: flex;
 	align-items: center;
 	text-decoration: none;
 }
-.socialBox:active{
-	/*border-style: inset;*/
-	box-shadow: -1px -1px 3px #ddd;
+@media(max-width: 576px){
+	.container--contact{
+		flex-direction: column;
+	}
+	.contact__section--image{
+		width: 100%;
+		max-height:250px; 
+		background-position: center -250px;
+	}
+	.socialBox{
+
+	}
 }
 .fa{
 	margin:5px;
