@@ -82,7 +82,7 @@ small, figcaption{
 	}
 	.header__menu{
 		width: 25%;
-		background: #fffa;
+		background: #fffb;
 		position: absolute;
 		top:51px;
 		right: 0;
@@ -110,6 +110,7 @@ small, figcaption{
 	align-items: center;
 }
 .container__title{
+	min-width: 10px; 
 	margin:20px 0;
 	font-size: 36px;
 	color: #a9abad;
@@ -153,6 +154,7 @@ small, figcaption{
 	}
 }
 .container--partners{
+	margin-bottom: 70px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -172,11 +174,12 @@ small, figcaption{
 	min-height: 250px;
 }
 .partners__name{
+	margin-bottom:2px; 
 	color: #f38000;
 	line-height: 1.5em;
 }
 .partners__text{
-	margin-right:10px;
+	margin-right:2%;
 	color: #a9abad;
 	text-align: justify;
 	line-height: 1.6em;
@@ -199,6 +202,7 @@ small, figcaption{
 	.container--partners{
 		width: 96%;
 		margin: 0 2%;
+		margin-bottom: 70px;
 	}
 }
 @media(max-width: 576px){
@@ -342,7 +346,7 @@ small, figcaption{
 .job__text--info{
 	margin:5px 0;
 }
-@media(max-width: 576px){
+@media(max-width: 780px){
 	.container--job{
 		width: 96%;
 		margin:0 2%;
