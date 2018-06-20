@@ -34,7 +34,9 @@ const codSlider = function (){
 	}
 };
 
+
 codSlider();
+
 
 function resize(){
 	codSlider()

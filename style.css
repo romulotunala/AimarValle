@@ -94,8 +94,6 @@ small, figcaption{
 		display: none;
 		flex-direction: column;
 		align-items: flex-end;
-
-		background: red;
 	}
 	.headerMenu__item{
 		padding-right: 20%; 
