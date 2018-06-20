@@ -1,9 +1,8 @@
-var change
+let change;
+let element = document.querySelectorAll(".job__containerImages");
 
-function resize(){
-	let element = document.querySelectorAll(".job__containerImages");
+const codSlider = function (){
 	if(window.innerWidth <= '576'){
-		console.log('test', window.innerWidth)
 		let i;
 		for(i = 0;i < element.length;i++){
 			element[i].classList.add('slider');
@@ -33,4 +32,10 @@ function resize(){
 			element[i].style.display = "block";
 		}
 	}
-}
+};
+
+codSlider();
+
+function resize(){
+	codSlider()
+};
