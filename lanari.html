@@ -25,7 +25,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onresize="resize()">
 <header class="header">
 	<a class="header__logo" href="index.html">
 		<img src="assets/logoAimarValle.png" alt="Logo Aimar Valle">
@@ -50,63 +50,67 @@
 		<p class="job__text job__text--info">Autor do projeto: Aimar Valle</p>
 	</section>
 	<section class="job__item job__item--images">
-		<figure>
+		<button class="material-icons job__arrow job__arrow--back" 
+			onclick="change(-1)">arrow_back</button>
+		<button class="material-icons job__arrow job__arrow--next" 
+			onclick="change(1)">arrow_forward</button>
+		<figure class="job__containerImages">
 			<img class="jog__picture" src="images/lanari01.jpg">
 			<figcaption>Croqui Estação Ônibus</figcaption>	
 		</figure>
-		<figure>
+		<figure class="job__containerImages">
 			<img class="jog__picture" src="images/lanari02.jpg">
 			<figcaption>Croqui Estação Ferroviária</figcaption>	
 		</figure>
-		<figure>
+		<figure class="job__containerImages">
 			<img class="jog__picture" src="images/lanari03.jpg">
 			<figcaption>Estação Ônibus (Estrutura)</figcaption>	
 		</figure>
-		<figure>
+		<figure class="job__containerImages">
 			<img class="jog__picture" src="images/lanari04.jpg">
 			<figcaption>Estação Ferroviária (Estrutura)</figcaption>	
 		</figure>
-		<figure>
+		<figure class="job__containerImages">
 			<img class="jog__picture" src="images/lanari05.jpg">
 			<figcaption>Vista Aérea</figcaption>	
 		</figure>
-		<figure>
+		<figure class="job__containerImages">
 			<img class="jog__picture" src="images/lanari06.jpg">
 			<figcaption>Vista Leste</figcaption>	
 		</figure>
-		<figure>
+		<figure class="job__containerImages">
 			<img class="jog__picture" src="images/lanari07.jpg">
 			<figcaption>Vista Norte</figcaption>	
 		</figure>
-		<figure>
+		<figure class="job__containerImages">
 			<img class="jog__picture" src="images/lanari08.jpg">
 			<figcaption>Vista Oeste</figcaption>	
 		</figure>
-		<figure>
+		<figure class="job__containerImages">
 			<img class="jog__picture" src="images/lanari09.jpg">
 			<figcaption>Vista RJ</figcaption>	
 		</figure>
-		<figure>
+		<figure class="job__containerImages">
 			<img class="jog__picture" src="images/lanari10.jpg">
 			<figcaption>Vista Sul</figcaption>	
 		</figure>
-		<figure>
+		<figure class="job__containerImages">
 			<img class="jog__picture" src="images/lanari11.jpg">
 			<figcaption>Prancha 1</figcaption>	
 		</figure>
-		<figure>
+		<figure class="job__containerImages">
 			<img class="jog__picture" src="images/lanari12.jpg">
 			<figcaption>Prancha 2</figcaption>	
 		</figure>
-		<figure>
+		<figure class="job__containerImages">
 			<img class="jog__picture" src="images/lanari13.jpg">
 			<figcaption>Prancha 3</figcaption>	
 		</figure>
-		<figure>
+		<figure class="job__containerImages">
 			<img class="jog__picture" src="images/lanari14.jpg">
 			<figcaption>Prancha 4</figcaption>	
 		</figure>
-		<figure>
+		<figure class="job__containerImages">
 			<img class="jog__picture" src="images/lanari15.jpg">
 			<figcaption>Prancha Resumo</figcaption>	
 		</figure>
@@ -117,5 +121,6 @@
 	<hr class="line__orange">
 	<small class="allReserved">Aimar Valle Arquitetura e Urbanismo © 2018 - All rights reserved. Developed by <a href="https://romulotunala.github.io/" target="_blank">Rômulo Tunala</a></small>
 </footer>
+<script src="main.js"></script>
 </body>
 </html>
