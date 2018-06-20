@@ -62,6 +62,7 @@ small, figcaption{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
 }
 .headerMenu__item{
 	text-align: center;
@@ -83,10 +84,13 @@ small, figcaption{
 		display: flex;
 	}
 	.header__menu{
-		width: 25%;
+		min-width: 10%;
+		max-width: 120px;
+		/*width: 100%;
+		max-width: 100%;*/
 		background: #fffb;
 		position: absolute;
-		top:51px;
+		top:42px;
 		right: 0;
 		z-index: 1;
 		display: none;
@@ -94,8 +98,9 @@ small, figcaption{
 		align-items: flex-end;
 	}
 	.headerMenu__item{
-		padding-right: 25%; 
+		padding-right: 20%; 
 		margin:20px 0;
+		position: relative;
 	}	
 }
 .headerMenu__item:hover{
