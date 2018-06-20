@@ -86,8 +86,6 @@ small, figcaption{
 	.header__menu{
 		min-width: 10%;
 		max-width: 120px;
-		/*width: 100%;
-		max-width: 100%;*/
 		background: #fffb;
 		position: absolute;
 		top:52px;

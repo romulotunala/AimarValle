@@ -1,5 +1,6 @@
 let change;
 let element = document.querySelectorAll(".job__containerImages");
+let slideIndex = 1;
 
 const codSlider = function (){
 	if(window.innerWidth <= '576'){
@@ -8,7 +9,6 @@ const codSlider = function (){
 			element[i].classList.add('slider');
 		}
 
-		let slideIndex = 1;
 		showDivs(slideIndex);
 
 		change = function plusDivs(n) {
@@ -18,10 +18,10 @@ const codSlider = function (){
 		function showDivs(n) {
 		    let i;
 		    let x = document.getElementsByClassName('slider');
-		    if (n > x.length) {slideIndex = 1} 
-		    if (n < 1) {slideIndex = x.length} ;
+		    if (n > x.length) {slideIndex = 1}; 
+		    if (n < 1) {slideIndex = x.length};
 		    for (i = 0; i < x.length; i++) {
-		        x[i].style.display = "none"; 
+		        x[i].style.display = "none";
 		    }
 		    x[slideIndex-1].style.display = "block";
 		}		
