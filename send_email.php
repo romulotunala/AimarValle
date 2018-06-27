@@ -1,9 +1,9 @@
 <?php
 
-if(isset($_POST['enviar'])){
+if(isset($_POST['submit'])){
 	# alterar a variavel abaixo colocando o seu email
 	$recipient = "romulotunala@gmail.com";
-	$assunto = "solicitação de orçamento via site.";
+	$subject = "solicitação de orçamento via site.";
 
 	$name = $_POST['name'];
 	$email = $_POST['email'];
@@ -21,7 +21,7 @@ if(isset($_POST['enviar'])){
 	$body .= "===================================" . "\n";
 
 	// envia o email
-	mail($recipient, $assunto , $body, "From: $email\r\n");
+	mail($recipient, $subject , $body, "From: $email\r\n");
 
 	// redireciona para a página de obrigado
 	header("location:contact.html");
