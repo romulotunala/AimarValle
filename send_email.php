@@ -1,6 +1,6 @@
 <?php
 
-// if(isset($_POST['submit'])){
+if(isset($_POST['name'])){
 
 	// alterar a variavel abaixo colocando o seu email
 	$recipient = "romulotunala@gmail.com";
@@ -26,6 +26,6 @@
 
 	// redireciona para a página de obrigado
 	header("location:contact.html");
-// }
+}
 
 ?>

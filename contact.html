@@ -69,21 +69,20 @@
 	<section class="contact__section">
 		<h3 class="contactForm__legend">Solicite seu orçamento</h3>
 		<form class="contact__form" 
-			method="post" 
-			action="send_email.php">
+			method="POST" 
+			action="https://formspree.io/romulotunala@gmail.com">
 			<input class="contactForm__input" 
-				name="nome" 
+				name="name" 
 				type="text" 
 				placeholder="seu nome">
 			<input class="contactForm__input" 
 				name="email" 
-				type="text" 
+				type="email" 
 				placeholder="seu e-mail">
 			<textarea class="contactForm__input contactForm__input--textarea" 
-				name="text" 
+				name="message" 
 				placeholder="sua mensagem"></textarea>
-			<button class="contactForm__btn" 
-				name="submit" 
+			<button class="contactForm__btn"
 				type="submit">Enviar</button>
 		</form>
 	</section>
