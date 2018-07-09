@@ -395,6 +395,20 @@ small, figcaption{
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
+.job__configImages{
+	width: 100%;
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+}
+.job-configImages__btn{
+	margin:0 10px;
+	font-size: 40px;
+	color:#a9abad;
+	background: none;
+	border:none;
+	cursor: pointer;
+}
 .job__arrow{
 	display: none;
 	border:none;
