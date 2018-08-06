@@ -124,6 +124,10 @@ small, figcaption{
 	width: 80%;
 }
 @media(max-width: 780px){
+	.container__title{
+		padding: 0 10px;
+		font-size: 32px;
+	}
 	.container__logo{
 		width: 90%;
 	}
@@ -394,6 +398,8 @@ small, figcaption{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+
+	/*background: red;*/
 }
 .job__configImages{
 	width: 100%;
@@ -408,6 +414,13 @@ small, figcaption{
 	background: none;
 	border:none;
 	cursor: pointer;
+	text-decoration: none;
+}
+#btn__slider--off{
+	display: none;
+}
+#btn__slider--on{
+	display: block;	
 }
 @media(max-width: 576px){
 	.job__configImages{
@@ -421,7 +434,7 @@ small, figcaption{
 	background: #a9abad;
 	color:#fff;
 	position: absolute;
-	top:100px;
+	top:49%;
 }
 .job__arrow:focus{
 	outline: none;
@@ -437,8 +450,13 @@ small, figcaption{
 	width: 30%;
 	margin:10px auto;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
 }
-.job__item--images img{
+.linkTop{
+	width: 100%;
+}
+.jog__picture{
 	width: 100%;
 }
 .job__item--images figcaption{

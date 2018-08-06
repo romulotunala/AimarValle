@@ -51,52 +51,58 @@
 		<p class="job__text job__text--info">Autor do projeto: Emerson Romão</p>
 		<p class="job__text job__text--info">Planta humanizada e 3D: Aimar logoAimarValle</p>
 	</section>
-	<section class="job__item job__item--images">
+	<section class="job__item job__item--images" id="container__imgs">
+		<nav class="job__configImages">
+			<button class="material-icons job-configImages__btn" id="btn__slider--off" onclick="on_off('off')">apps</button>
+			<button class="material-icons job-configImages__btn linkTop" id="btn__slider--on" onclick="on_off('on')">crop_din</button>
+		</nav>
 		<button class="material-icons job__arrow job__arrow--back" 
+			id="job__arrow--back"
 			onclick="change(-1)">arrow_back</button>
 		<button class="material-icons job__arrow job__arrow--next" 
+			id="job__arrow--next"
 			onclick="change(1)">arrow_forward</button>
-		<figure class="job__containerImages">
+		<figure class="job__containerImages linkTop" id="job__containerImages" onclick="on_off('on',1)">
 			<img class="jog__picture" src="images/residenciais01.jpg">
 			<figcaption>Vista aérea esquerda</figcaption>	
 		</figure>
-		<figure class="job__containerImages">
+		<figure class="job__containerImages linkTop" id="job__containerImages" onclick="on_off('on',2)">
 			<img class="jog__picture" src="images/residenciais02.jpg">
 			<figcaption>Vista aérea direita</figcaption>	
 		</figure>
-		<figure class="job__containerImages">
+		<figure class="job__containerImages linkTop" id="job__containerImages" onclick="on_off('on',3)">
 			<img class="jog__picture" src="images/residenciais03.jpg">
 			<figcaption>Vista a partir da garagem</figcaption>	
 		</figure>
-		<figure class="job__containerImages">
+		<figure class="job__containerImages linkTop" id="job__containerImages" onclick="on_off('on',4)">
 			<img class="jog__picture" src="images/residenciais04.jpg">
 			<figcaption>Vista a partir do acesso</figcaption>	
 		</figure>
-		<figure class="job__containerImages">
+		<figure class="job__containerImages linkTop" id="job__containerImages" onclick="on_off('on',5)">
 			<img class="jog__picture" src="images/residenciais05.jpg">
 			<figcaption>Fachada posterior das casas da frente</figcaption>	
 		</figure>
-		<figure class="job__containerImages">
+		<figure class="job__containerImages linkTop" id="job__containerImages" onclick="on_off('on',6)">
 			<img class="jog__picture" src="images/residenciais06.jpg">
 			<figcaption>Fachada posterior das casas dos fundos</figcaption>	
 		</figure>
-		<figure class="job__containerImages">
+		<figure class="job__containerImages linkTop" id="job__containerImages" onclick="on_off('on',7)">
 			<img class="jog__picture" src="images/residenciais07.jpg">
 			<figcaption>Corte humanizado</figcaption>	
 		</figure>
-		<figure class="job__containerImages">
+		<figure class="job__containerImages linkTop" id="job__containerImages" onclick="on_off('on',8)">
 			<img class="jog__picture" src="images/residenciais08.jpg">
 			<figcaption>Planta humanizada pavimento térreo casas dos fundos</figcaption>	
 		</figure>
-		<figure class="job__containerImages">
+		<figure class="job__containerImages linkTop" id="job__containerImages" onclick="on_off('on',9)">
 			<img class="jog__picture" src="images/residenciais09.jpg">
 			<figcaption>Planta humanizada pavimento térreo casas da frente</figcaption>	
 		</figure>
-		<figure class="job__containerImages">
+		<figure class="job__containerImages linkTop" id="job__containerImages" onclick="on_off('on',10)">
 			<img class="jog__picture" src="images/residenciais10.jpg">
 			<figcaption>Planta humanizada pavimento superior casas dos fundos</figcaption>	
 		</figure>
-		<figure class="job__containerImages">
+		<figure class="job__containerImages linkTop" id="job__containerImages" onclick="on_off('on',11)">
 			<img class="jog__picture" src="images/residenciais11.jpg">
 			<figcaption>Planta humanizada pavimento superior casas da frente</figcaption>	
 		</figure>
